@@ -1,12 +1,6 @@
 import logo from "../../assets/logo.svg";
-import {
-  Button,
-  InnerNav,
-  InnerNavtext,
-  Logo,
-  NavStyle,
-  TextInButton,
-} from "./NavBarStyle";
+import Banner from "../Banner/Banner";
+import { Button, Logo, NavStyle, TextInButton } from "./NavBarStyle";
 import Navigation from "./Navigation";
 
 const NavBar = () => {
@@ -20,7 +14,7 @@ const NavBar = () => {
           <TextInButton> Connect wallet</TextInButton>
         </Button>
       </NavStyle>
-     
+      <Banner />
     </>
   );
 };

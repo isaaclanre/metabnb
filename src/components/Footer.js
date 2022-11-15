@@ -1,36 +1,29 @@
-import React from 'react'
-import DarkLogo from "../assets/svgs/DarkLogo.svg"
-import FacebookLogo from "../assets/svgs/FacebookLogo.svg"
-import InstagramLogo from "../assets/svgs/InstagramLogo.svg"
-import TwitterLogo from "../assets/svgs/TwitterLogo.svg"
-import check from "../assets/svgs/Vector.svg"
+import React from "react";
+import DarkLogo from "../assets/icons/DarkLogo.svg";
+import FacebookLogo from "../assets/icons/FacebookLogo.svg";
+import InstagramLogo from "../assets/icons/InstagramLogo.svg";
+import TwitterLogo from "../assets/icons/TwitterLogo.svg";
+import check from "../assets/icons/Vector.svg";
 
-import { StyledFooter } from './styled/StyledFooter'
+import { StyledFooter } from "./styled/StyledFooter";
 
 const Footer = () => {
   return (
     <StyledFooter>
       <div>
-        <div className='footer-div-one'>
-          <img 
-            src = {DarkLogo}
-            alt = "logo"
-          />
-          <div className='social-div'>
-            <img 
-              src = {FacebookLogo}
-              alt = "logo"
-            />
-            <img 
-              src = {InstagramLogo}
-              alt = "logo"
-            />
-            <img 
-              src = {TwitterLogo}
-              alt = "logo"
-            />
+        <div className="footer-div-one">
+          <img src={DarkLogo} alt="logo" />
+          <div className="social-div">
+            <img src={FacebookLogo} alt="logo" />
+            <img src={InstagramLogo} alt="logo" />
+            <img src={TwitterLogo} alt="logo" />
           </div>
-          <div className='certified'><span><img  src = {check} alt = "certified"/></span> <p>2022 Metabnb </p></div>
+          <div className="certified">
+            <span>
+              <img src={check} alt="certified" />
+            </span>{" "}
+            <p>2022 Metabnb </p>
+          </div>
         </div>
       </div>
       <div>
@@ -54,9 +47,14 @@ const Footer = () => {
         <p>Career</p>
         <p>Contact Us</p>
       </div>
-      <div className='certified-mobile'><span><img  src = {check} alt = "certified"/></span> <p>2022 Metabnb </p></div>
+      <div className="certified-mobile">
+        <span>
+          <img src={check} alt="certified" />
+        </span>{" "}
+        <p>2022 Metabnb </p>
+      </div>
     </StyledFooter>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

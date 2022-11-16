@@ -1,20 +1,20 @@
-import React from "react";
-import "../styles.css";
-import toggle from "../assets/icons/Setting.svg";
-import { StyledPlacesSection } from "../components/styled/HomeStyles";
+import React from 'react'
+import "../styles.css"
+import toggle from "../assets/svgs/Setting.svg"
+import { StyledPlacesSection } from '../components/styled/HomeStyles'
 import { PlacesData as houses } from "../data";
 import Card from "../components/Card";
-import Dropdown from "../components/Dropdown";
+import Dropdown from '../components/Dropdown';
 
 const Contact = () => {
   return (
     <>
-      <div className="paigination">
+      <div className='paigination'>
         <Dropdown
           trigger={
             <button>
-              <p>Places</p>
-              <p>&darr;</p>
+            <p>Places</p> 
+            <p>&darr;</p>
             </button>
           }
           menu={[
@@ -25,7 +25,7 @@ const Contact = () => {
             <button>Beach</button>,
             <button>Carbins</button>,
             <button>Off-grid</button>,
-            <button>Farm</button>,
+            <button>Farm</button>
           ]}
         />
         <nav>
@@ -38,20 +38,21 @@ const Contact = () => {
           <p>Off-grid</p>
           <p>Farm</p>
         </nav>
-        <div className="location-toggle">
+        <div className='location-toggle'>
           <p>Location</p>
-          <img src={toggle} alt="location toggle" />
+          <img src = {toggle} alt = "location toggle" />
         </div>
       </div>
       <StyledPlacesSection>
         <section>
-          {houses.map((house) => (
-            <Card img={house} />
-          ))}
+          {
+              houses.map((house)=> <Card img = {house}/>)
+           }
         </section>
       </StyledPlacesSection>
-    </>
-  );
-};
+    </>  
+  )
+}
 
-export default Contact;
+export default Contact
+
